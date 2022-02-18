@@ -5,12 +5,13 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RamiroNehuen/1er-entrega-proyecto-fina-backend-coderhouse.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -18,7 +19,7 @@
   },
   "homepage": "https://github.com/RamiroNehuen/1er-entrega-proyecto-fina-backend-coderhouse#readme",
   "dependencies": {
-    "express": "^4.17.2",
+    "express": "^4.17.3",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.15"
   }

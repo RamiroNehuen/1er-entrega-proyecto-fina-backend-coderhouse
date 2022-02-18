@@ -8,7 +8,7 @@ const saveProduct = (product) => {
       productList.push(product);
       const productsText = JSON.stringify({ ...db, products: productList });
       try {
-        writeFile("./datebase.json", productsText);
+        writeFile("./database.json", productsText);
       } catch (err) {
         console.log("No se pudo escribir el archivo!");
       }

@@ -2,6 +2,8 @@ const { Router } = require("express");
 
 const database = require("../services/database");
 
+const product = require("../models/Product");
+
 const products = Router();
 
 products.get("/:id?", async (req, res) => {
@@ -20,13 +22,14 @@ products.get("/:id?", async (req, res) => {
 });
 
 products.post("/", async (req, res) => {
-  const product = {
-    product: req.body.item,
-    price: req.body.price,
-    img: req.body.imgUrl,
-  };
+  const newProduct = new product.Product(
+    req.body.description,
+    req.body.code,
+    req.body.name,
+    req.body.img
+  );
 
-  const productList = await database.saveProduct(product);
+  const productList = await database.saveProduct(newProduct);
 
   res.send(productList);
 });

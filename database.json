@@ -1,4 +1,1 @@
-{
-  "products": [{ "foo": "var" }],
-  "cart": []
-}
+{"products":[{"foo":"var"},{"price":"200"},{"name":"Yerba","description":"yerba mate correntina","code":"aofdioifdg","img":"https://thumbs.dreamstime.com/b/newborn-baby-boy-portrait-newborn-baby-boy-wearing-white-knitted-costume-sleeping-hammock-infant-child-kid-festive-holiday-241303511.jpg"}],"cart":[]}
